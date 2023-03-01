@@ -1,0 +1,617 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+$dark: rgba(51, 51, 51, 1);
+$accent: rgba(102, 192, 93, 1);
+$grey: rgba(239, 239, 239, 1);
+
+body{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.conteiner{
+    width: 1130px;
+    margin: 0 auto;
+}
+
+.button{
+    font-size: 14px;
+    padding: 1px 24px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.button:hover{
+    transform: scale(1.05);
+}
+
+.header{
+    height: 247px;
+}
+
+.header__topline{
+    background-color: $grey;
+}
+
+#mobile02{
+    display: none;
+}
+
+
+.topline__nav{
+    width: 535px;
+    margin: 0 auto;
+    display: flex;
+
+    &-items{
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-item{
+        text-decoration: none;
+        color: $dark;
+        font-size: 14px;
+        justify-content: space-around;
+        margin: 0 15px;
+    }
+
+    &-item:hover{
+        text-decoration: underline;
+    }
+}
+
+.secondline{
+    height: 197px;
+}
+
+.secondline__logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-block1{
+        display: flex;
+    }
+
+    &-block2{
+        display: flex;
+        padding-right: 5px;
+    }
+
+    &-logo{
+        margin-left: 14px;
+    }
+
+    &-name{
+        font-family: 'Roboto';
+        font-style: bold;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 42.19px;
+        letter-spacing: 4px;
+        color: $accent;
+        margin-left: 20px;
+    }
+
+    &-fone{
+        margin-right: 40px;
+    }
+
+    &-button{
+        height: 40px;
+        border: 2px solid $accent;
+        margin-top: 8px;
+        background-color: #fff;
+    }
+}
+
+.secondline__nav{
+    width: 778px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 16px;
+
+    &-items{
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-item{
+            text-decoration: none;
+            color: $dark;
+            font-size: 16px;
+            justify-content: space-around;
+            margin: 0 20px;
+    }
+}
+
+.sale{
+    height: 604px;
+    background-color: #66C05D;
+}
+
+.sale__content{
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    width: 1300px;
+    margin: 0 auto;
+
+
+    &-block01{
+        width: 308px;
+        height: 219px;
+        padding-top: 150px;
+        padding-left: 90px;
+
+        h1{
+            color: #fff;
+            font-size: 48px;
+        }
+
+        p{
+            color: #fff;
+            font-size: 14px;
+            padding-top: 5px;
+        }
+    }
+
+    &-button{
+        color: #fff;
+        border: 2px solid #fff;
+        background-color: rgba(28,28,28,0);
+        padding: 10px 45px;
+        margin-top: 30px;
+    }
+
+    &-elips1{
+        width: 667px;
+        height: 667px;
+        border-radius: 50%;
+        border: 90px solid rgba(255, 255, 255, 0.3);
+        margin-top: -115px;
+    }
+
+    &-elips2{
+        background-color: rgba(255, 255, 255, 0.6);
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+    }
+
+    &-chair{
+        background-image: url(../img/chair.png);
+        height: 597px;
+        width: 547px;
+        margin-left: 100px;
+        margin-top: -720px;
+    }
+}
+
+.goods{
+    display: flex;
+    background-color: $grey;
+    height: 954px;
+
+    &__conteiner{
+        display: flex;
+    }
+
+    &__cards{
+        width: 48%;
+        height: 753px;
+        padding-top: 50px;
+        margin-left: 20px;
+    }
+
+    &__cards1{
+        display: flex;
+        padding-top: 20px;
+        justify-content: space-between;
+
+        &-title{
+            font-family: 'Roboto';
+            font-style: bold;
+            font-size: 24px;
+            font-weight: 700;
+            
+        }
+
+        &-card{
+            width: 255px;
+            height: 363px;
+            background-color: #fff;
+        }
+
+        &-foto{
+            background-image: url(../img/chair01.png);
+            width: 125px;
+            height: 166px;
+            margin: 0 auto;
+            margin-top: 27px;
+        }
+
+        &-text{
+            font-size: 14px;
+            width: 195px;
+            margin: 0 auto;
+            margin-top: 20px;margin-left: 50px;
+        }
+
+        &-price{
+            font-size: 21px;
+            letter-spacing: 1px;
+            margin-left: 85px;
+            margin-top: 15px;
+        }
+
+        &-button{
+            background-color: $accent;
+            border: $accent;
+            font-size: 14px;
+            color: #fff;
+            margin-left: 65px;
+            padding: 10px 40px;
+            margin-top: -10px;
+        }
+
+        &-bonus{
+            height: 212px;
+            background-color: $accent;
+            margin-top: 100px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        &-info{
+            width: 260px;
+            margin-top: 15px;
+
+            h3{
+                color: #fff;
+            }
+
+            p{
+                color: #fff;
+            }
+
+            input{
+                height: 30px;
+                width: 230px;
+                margin-top: 10px;
+                border-radius: 20px;
+                border: none;
+            }
+        }
+
+        &-mail{
+            background-image: url(../img/mail.svg);
+            width: 138px;
+            height: 110px;
+            margin-top: 47px;
+        }
+
+        
+
+        &-car{
+            background-image: url(../img/car.svg);
+            width: 180px;
+            height: 62px;
+            margin-top: 70px;
+            color: #fff;
+        }
+
+        &-button01{
+            border: 2px solid #fff;
+            border-radius: 20px;
+            margin-top: 12px;
+            margin-left: 25px;
+            background-color: rgba(239, 239, 239, 0);
+            padding: 5px 25px;
+            color: #fff;
+        }
+    }
+}
+
+.rights{
+    margin-top: 77px;
+}
+
+.footer{
+
+    &__line{
+        display: flex;
+        margin-top: 40px;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        
+        &-massendger1{
+            border: none;
+            background-image: url(../img/Ellipse.svg);
+            width: 45px;
+            height: 45px;
+            cursor: pointer;
+            margin-left: 17px;
+            border-radius: 50%;
+        }
+
+        &-massendger1:hover{
+            transform: scale(1.05);
+        }
+
+        &-adress{
+            font-size: 13px;
+            margin-left: 130px;
+        }
+
+        &-tel{
+            margin-left: 30px;
+        }
+
+        &-button{
+            border: 2px solid $accent;
+            background-color: rgba(239, 239, 239, 0);
+        }
+    }
+
+    &__secondline{
+        background-color: $grey;
+        height: 64px;
+        
+
+        &-info{
+            display: flex;
+            justify-content: space-between;
+
+            p{
+                font-size: 12px;
+                margin-top: 30px;
+            }
+
+        }
+    }
+}
+
+#mobile01{
+    display: none;
+}
+
+@media screen and (max-width: 1300px){
+.sale{
+    height: 900px;
+}
+
+    .sale__content{
+        display: block;
+        width: 700px;
+
+        &-block01{
+            margin: 0 auto;
+            margin-top: -100px;
+        }
+
+        &-elips1{
+            margin: 0 auto;
+            margin-top: 70px;
+            width: 500px;
+            height: 500px;
+        }
+
+        &-chair{
+            margin-left: 30px;
+            margin-top: -640px;
+            width: 470px;
+            height: 520px;
+        }
+    }
+
+    .goods{
+        height: 100%;
+
+        &__cards{
+            width: 90%;
+        }
+
+        &__conteiner{
+            display: block;
+            
+        }
+    }
+
+    .footer__line{
+        display: block;
+
+        &-massendger1{
+            margin-left: 120px;
+        }
+
+        &-adress{
+            margin: 15px 284px;
+        }
+
+        &-tel{
+            margin: 15px 284px;
+        }
+
+        &-button{
+            margin: 15px 284px;
+        }
+    }
+
+    .conteiner{
+        width: 800px;
+    }
+
+    massendger1{
+        margin-left: 120px;
+    }
+}
+
+@media screen and (max-width: 800px){
+
+    .header{
+        height: 150px;
+    }
+    .topline__nav{
+        display: none;
+    
+    }
+    .conteiner{
+        width: 500px;
+    }
+
+    #mobile01{
+        display: block;
+        margin-left: 140px;
+        color: black;
+        height: 30px;
+        }
+
+    .secondline__nav{
+        display: none;
+    }
+
+    #mobile02{
+        display: block;
+        margin-left: 140px;
+        color: black;
+        height: 30px;
+        }
+
+    .secondline__logo{
+        justify-content: space-around;
+    }
+
+    .sale__content{
+        width: 500px;
+    }
+
+    .secondline__logo-fone{
+        display: none;
+    }
+
+    .sale__content-elips1{
+        display: none;
+        margin: 0 auto;
+        margin-top: 70px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .sale__content-chair{
+        width: 450px;
+        height: 540px;
+        margin-left: -50px;
+        margin-top: 20px;
+    
+    }
+
+
+    .goods__cards1-card{
+        margin-left: -15px;
+        width: 225px;
+        height: auto;
+    }
+
+    .footer__line{
+        &-massendger1{
+        margin-left: 50px;
+    }
+
+    &-adress{
+        margin: 15px 90px;
+    }
+
+    &-tel{
+        margin: 15px 90px;
+    }
+
+    &-button{
+        margin: 15px 90px;
+    }
+    }
+
+    .footer__secondline-info {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .conteiner{
+        width: 350px;
+        display: block;
+    }
+
+    .header{
+        height: 250px;
+    }
+
+    #mobile01{
+        margin-left: 120px;
+    }
+
+    #mobile02{
+        margin-left: 120px;
+        margin-top: 20px;
+    }
+
+    .secondline__logo-block2 {
+        display: block;
+    }
+
+    .secondline__logo-fone{
+        display: block;
+        margin-left: 35%;
+    }
+
+    .secondline__logo-button{
+        margin-left: 30%;
+    }
+
+    .sale{
+        display: none;
+    }
+
+    .goods__cards1{
+        display: block;
+
+        &-card{
+            margin: 10px auto;
+        }
+
+        &-bonus{
+            display: block;
+            height: 280px;
+        }
+
+        &-info{
+            margin: auto;
+        }
+
+        &-mail{
+            margin: 15px auto;
+        }
+
+        &-car{
+            margin: 15px auto;
+        }
+    }
+
+    .goods__cards{
+        height: 1070px;
+    }
+}
+
+.goods__cards1-title {
+    margin-left: 90px;
+}
+
+.footer__line-massendger1{
+    margin-left: 25px;
+}
